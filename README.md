@@ -32,7 +32,7 @@ W tensorflow/core/platform/cloud/googleauthprovider.cc:160] All attempts to get 
 gsutil acl ch -u AllUsers:R gs://<yourbucket>/**
 ```
 
-### list <your_bucket>
+### list a bucket
 ```sh
 gsutil ls gs://<your_bucket>/**
 ```
@@ -45,4 +45,9 @@ gsutil mb gs://<new_bucket>
 ### remove <your_bucket>
 ```sh
 gsutil rb gs://<your_bucket>
+```
+
+### show the content of a file
+```sh
+gsutil cat gs://<your_bucket>/<your_file>
 ```
