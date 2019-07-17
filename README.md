@@ -51,3 +51,8 @@ gsutil rb gs://<your_bucket>
 ```sh
 gsutil cat gs://<your_bucket>/<your_file>
 ```
+
+### copy a local file to GCP
+```sh
+gsutil cp <file_name> gs://<your_bucket>
+```
