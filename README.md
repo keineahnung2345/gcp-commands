@@ -31,6 +31,10 @@ W tensorflow/core/platform/cloud/googleauthprovider.cc:160] All attempts to get 
 ```sh
 gsutil acl ch -u AllUsers:R gs://<yourbucket>/**
 ```
+To change recursively:
+```sh
+gsutil acl -r ch -u AllUsers:R gs://<yourbucket>/**
+```
 
 ### list a bucket
 ```sh
