@@ -26,6 +26,18 @@ This solves:
 W tensorflow/core/platform/cloud/googleauthprovider.cc:160] All attempts to get a Google authentication bearer token failed, returning an empty token. Retrieving token from files failed with "Not found: Could not locate the credentials file.". Retrieving token from GCE failed with "Unavailable: Error executing an HTTP request (HTTP response code 0, error code 6, error message 'Couldn't resolve host 'metadata'')".
 ```
 
+### Python: check credential
+```py
+from oauth2client.client import GoogleCredentials
+
+credentials = GoogleCredentials.get_application_default()
+print(credentials.get_access_token())
+```
+Its output:
+```
+AccessTokenInfo(access_token='ya???ltI??4q???Vf5-zAn???gyzZpgr???cI?l7h???amFFgA_???7MQfLw', expires_in=3599)
+```
+
 ### allow all users to read <your_bucket>
 [Allow Public Read access on a GCS bucket?](https://stackoverflow.com/questions/40232188/allow-public-read-access-on-a-gcs-bucket)
 ```sh
