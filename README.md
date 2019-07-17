@@ -31,3 +31,18 @@ W tensorflow/core/platform/cloud/googleauthprovider.cc:160] All attempts to get 
 ```sh
 gsutil acl ch -u AllUsers:R gs://<yourbucket>/**
 ```
+
+### list <your_bucket>
+```sh
+gsutil ls gs://<your_bucket>/**
+```
+
+### create a new bucket
+```sh
+gsutil mb gs://<new_bucket>
+```
+
+### remove <your_bucket>
+```sh
+gsutil rb gs://<your_bucket>
+```
